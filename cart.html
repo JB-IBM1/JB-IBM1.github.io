@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
   <header>
     <nav>
       <div class="logo">
         <img src="assets/logo.png" alt="Mike's Bikes Logo">
       </div>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="product1.html">Bikes</a></li>
         <li><a href="cart.html">Cart</a></li>
@@ -20,13 +21,30 @@
     </nav>
   </header>
 
+  <!-- Cart Section -->
   <section class="cart">
     <h1>Your Cart</h1>
-    <div id="cart-items"></div>
-    <p id="total">Total: $0.00</p>
+    <table id="cart-items">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cart items will be dynamically added here -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <td id="total">$0.00</td>
+        </tr>
+      </tfoot>
+    </table>
     <button onclick="payNow()">Pay Now</button>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2023 Mike's Bikes. All rights reserved.</p>
   </footer>

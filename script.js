@@ -26,19 +26,22 @@ function addToCart(name, price) {
 }
 
 function updateCart() {
-  const cartItems = document.getElementById("cart-items");
+  const cartItems = document.querySelector("#cart-items tbody");
   const total = document.getElementById("total");
   cartItems.innerHTML = "";
   let totalAmount = 0;
 
-  cart.forEach((item, index) => {
-    const itemElement = document.createElement("div");
-    itemElement.innerHTML = `${item.name} - $${item.price.toFixed(2)}`;
-    cartItems.appendChild(itemElement);
+  cart.forEach((item) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>$${item.price.toFixed(2)}</td>
+    `;
+    cartItems.appendChild(row);
     totalAmount += item.price;
   });
 
-  total.textContent = `Total: $${totalAmount.toFixed(2)}`;
+  total.textContent = `$${totalAmount.toFixed(2)}`;
 }
 
 function payNow() {
@@ -46,6 +49,17 @@ function payNow() {
   cart = [];
   updateCart();
 }
+
+// Initialize carousel on product pages
+if (document.getElementById("carousel-image")) {
+  updateCarousel();
+}
+
+// Initialize cart on cart page
+if (document.getElementById("cart-items")) {
+  updateCart();
+}
+
 
 // Newsletter form submission
 document.getElementById("newsletter-form").addEventListener("submit", function (e) {
