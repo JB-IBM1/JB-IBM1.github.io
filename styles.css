@@ -90,40 +90,45 @@ nav {
 
 /* Newsletter Section */
 .newsletter {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f4f4f4;
-}
-
-.newsletter h2 {
-  margin: 0 0 20px;
-}
-
-.newsletter form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.newsletter input {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.newsletter button {
-  padding: 10px 20px;
-  background: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.newsletter button:hover {
-  background: #555; /* Hover effect */
-}
+    text-align: center;
+    padding: 40px 20px;
+    background: #f4f4f4;
+  }
+  
+  .newsletter h2 {
+    margin: 0 0 20px;
+  }
+  
+  .newsletter form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  .newsletter button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background: #555; /* Hover effect */
+  }
 
 /* Footer */
 footer {
