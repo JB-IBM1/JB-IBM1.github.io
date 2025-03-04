@@ -1,7 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Bikes - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello </h1>
-<p>I'm an awesome index page.</p>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mike's Bikes Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product1.html">Bikes</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="assets/hero.jpg" alt="Hero Image">
+    <div class="hero-text">
+      <h1>Welcome to Mike's Bikes</h1>
+      <p>Your ride starts here.</p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Sign Up for Our Newsletter</h2>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <input type="Name" placeholder="Enter your name" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mike's Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
