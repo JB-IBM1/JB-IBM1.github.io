@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: effra-bold,Arial,sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -296,8 +296,8 @@ footer {
 }
 
 .bike-card img {
-  width: 100%;
-  height: auto;
+  width: 600px;
+  height: 450px;
 }
 
 .bike-card h2 {
