@@ -15,7 +15,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="product1.html">Bikes</a></li>
+        <li><a href="bikes.html">Bikes</a></li>
         <li><a href="cart.html">Cart</a></li>
       </ul>
     </nav>
@@ -42,5 +42,16 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- Modal for Add to Cart -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <h2>Item Added to Cart!</h2>
+    <p>What would you like to do next?</p>
+    <div class="modal-buttons">
+      <button onclick="viewCart()">View Cart</button>
+      <button onclick="continueShopping()">Continue Shopping</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
