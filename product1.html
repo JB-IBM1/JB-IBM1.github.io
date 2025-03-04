@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Bikes - Roadmaster X1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mike's Bikes Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product1.html">Bikes</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-details">
+    <div class="carousel">
+      <img src="assets/bike1.jpg" alt="Roadmaster X1" id="carousel-image">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+    <div class="product-info">
+      <h1>Roadmaster X1</h1>
+      <p class="price">$899.99</p>
+      <p class="description">The Roadmaster X1 is built for speed and comfort. With a lightweight aluminum frame and precision gears, it's perfect for long rides.</p>
+      <button onclick="addToCart('Roadmaster X1', 899.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mike's Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

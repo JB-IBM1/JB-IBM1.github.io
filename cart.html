@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Bikes - Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mike's Bikes Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product1.html">Bikes</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <p id="total">Total: $0.00</p>
+    <button onclick="payNow()">Pay Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mike's Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

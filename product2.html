@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Bikes - Trailblazer Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mike's Bikes Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product1.html">Bikes</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-details">
+    <div class="carousel">
+      <img src="assets/bike2.jpg" alt="Trailblazer Pro" id="carousel-image">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+    <div class="product-info">
+      <h1>Trailblazer Pro</h1>
+      <p class="price">$1,199.99</p>
+      <p class="description">The Trailblazer Pro is designed for off-road adventures. With durable tires and a shock-absorbing frame, it can handle any terrain.</p>
+      <button onclick="addToCart('Trailblazer Pro', 1199.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mike's Bikes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
