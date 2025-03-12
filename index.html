@@ -33,7 +33,18 @@
   <!-- Newsletter Section -->
 <section class="newsletter">
     <h2>Sign Up for Our Newsletter</h2>
-    <iframe src="http://www3.lenoxsoft.com/l/893491/2024-05-23/38nlcs" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+    <form id="newsletter-form">
+      <div class="form-group">
+        <input type="text" placeholder="First Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <!-- Footer -->
@@ -42,20 +53,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script type='text/javascript'>
-    piAId = '894491';
-    piCId = '';
-    piHostname = 'www3.lenoxsoft.com';
-    
-    (function() {
-      function async_load(){
-        var s = document.createElement('script'); s.type = 'text/javascript';
-        s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
-        var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
-      }
-      if(window.attachEvent) { window.attachEvent('onload', async_load); }
-      else { window.addEventListener('load', async_load, false); }
-    })();
-    </script>
+
 </body>
 </html>
